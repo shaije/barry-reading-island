@@ -102,6 +102,7 @@ function renderStart() {
       <button class="level-card" type="button" data-level="hard" aria-pressed="${difficulty === 'hard'}"><strong>קשה</strong><span>יותר כרטיסים דומים</span></button>
     </div>
     <button class="primary" id="start-button" type="button">מתחילים במשימה ←</button>
+    <a class="other-game-link" href="math.html">למשחק התפוזים בחשבון</a>
   `;
   document.querySelectorAll('[data-level]').forEach(button => button.addEventListener('click', () => {
     difficulty = button.dataset.level;
@@ -240,6 +241,7 @@ function renderDone() {
     <p class="completion-copy">קראת את כל 22 הצלילים והמילים ברמת ${ReadingLevels.levels[difficulty].label}, כולל החזרות שבדף.</p>
     <button class="primary" id="again-button" type="button">משחקים שוב ברמת ${ReadingLevels.levels[difficulty].label} ←</button>
     <button class="choose-level-button" id="choose-level-button" type="button">בוחרים רמה אחרת</button>
+    <a class="other-game-link" href="math.html">למשחק התפוזים בחשבון</a>
   `;
   document.getElementById('again-button').addEventListener('click', startGame);
   document.getElementById('choose-level-button').addEventListener('click', renderStart);

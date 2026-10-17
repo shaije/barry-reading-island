@@ -9,6 +9,7 @@
 .level-card strong { font-size: 21px; margin-bottom: 3px; }
 .level-card span { font-size: 14px; line-height: 1.2; }
 .choose-level-button { margin: 18px 0 0; padding: 9px 16px; border: 2px solid #95cfdf; border-radius: 14px; background: #fff; color: var(--navy); font-size: 17px; font-weight: 900; }
+.other-game-link { margin-top: 20px; color: var(--navy); font-size: 17px; font-weight: 800; }
 .homework-panel .letter-card { width: clamp(122px, 26vw, 165px); min-height: 126px; font-size: clamp(54px, 10vw, 77px); }
 .homework-panel .choices { max-width: 700px; gap: 13px; margin-top: 6px; }
 .homework-panel .choices.four .letter-card { width: clamp(126px, 28vw, 154px); }

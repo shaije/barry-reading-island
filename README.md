@@ -4,6 +4,8 @@
 
 **[לשחק עכשיו](https://barry-reading-island.vercel.app/)**
 
+משחק נוסף לילדים צעירים: **[אי התפוזים בחשבון](https://barry-reading-island.vercel.app/math.html)**. סופרים שתי קבוצות תפוזים ובוחרים את הסכום המצויר, עד עשרה תפוזים, ללא ספרות על המסך.
+
 ## רמות הקושי
 
 - **קל:** סדר הדף המקורי וכרטיסי התשובות המקוריים.
@@ -26,6 +28,7 @@ python3 -m http.server 8765
 
 ```sh
 node tests/levels.test.js
+node tests/math-rounds.test.js
 ```
 
 ## פרסום ב־Vercel
@@ -33,6 +36,6 @@ node tests/levels.test.js
 1. ב־Vercel בחרו **Add New Project** וייבאו את המאגר הזה מ־GitHub.
 2. בחרו **Framework Preset: Other** והשאירו את **Root Directory** על שורש המאגר.
 3. אין צורך בפקודת Build, בתיקיית Output או במשתני סביבה. לחצו **Deploy**.
-4. הכתובת הראשית מפנה אל `homework.html`, שבו נמצא המשחק.
+4. הכתובת הראשית מפנה אל `homework.html` למשחק הקריאה; משחק החשבון נמצא ב־`math.html`.
 
 קובצי ה־`.m4a` שבתיקיית `assets` דרושים להשמעה וצריכים להישאר במאגר.
