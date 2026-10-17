@@ -1,0 +1,53 @@
+.homework-panel h1 { max-width: 650px; }
+.sheet-summary { display: flex; gap: 9px; flex-wrap: wrap; justify-content: center; margin: 2px 0 16px; }
+.sheet-summary span { background: #e5f7fb; border: 2px solid #afdce5; color: var(--navy); border-radius: 999px; padding: 7px 12px; font-weight: 900; font-size: 15px; }
+.level-heading { margin: 0 0 11px; color: var(--navy); font-size: 20px; font-weight: 900; }
+.level-choices { width: min(100%, 610px); display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; margin-bottom: 25px; }
+.level-card { min-height: 94px; padding: 9px 7px; border: 3px solid #afdce5; border-radius: 18px; background: #fff; color: var(--navy); box-shadow: 0 5px 0 #c6e2e7; }
+.level-card[aria-pressed="true"] { border-color: #087baa; background: #dcf4ff; box-shadow: 0 5px 0 #7cbccf; }
+.level-card strong,.level-card span { display: block; }
+.level-card strong { font-size: 21px; margin-bottom: 3px; }
+.level-card span { font-size: 14px; line-height: 1.2; }
+.choose-level-button { margin: 18px 0 0; padding: 9px 16px; border: 2px solid #95cfdf; border-radius: 14px; background: #fff; color: var(--navy); font-size: 17px; font-weight: 900; }
+.homework-panel .letter-card { width: clamp(122px, 26vw, 165px); min-height: 126px; font-size: clamp(54px, 10vw, 77px); }
+.homework-panel .choices { max-width: 700px; gap: 13px; margin-top: 6px; }
+.homework-panel .choices.four .letter-card { width: clamp(126px, 28vw, 154px); }
+.homework-panel .letter-card[data-choice="תָמָר"] { font-size: clamp(44px, 7vw, 60px); }
+.sheet-progress { width: min(100%, 600px); margin: 4px 0 17px; }
+.sheet-progress-label { font-size: 15px; color: #557f8d; font-weight: 900; margin-bottom: 8px; }
+.route-rows { display: flex; gap: 6px; direction: rtl; justify-content: stretch; }
+.route-row { flex: 1; height: 13px; border-radius: 99px; border: 2px solid #a8cbd3; background: #e4f1f3; }
+.route-row.current { background: var(--sea); border-color: #087baa; }.route-row.done { background: #f8c94c; border-color: #e9ab22; }
+.row-steps { display: flex; gap: 8px; direction: rtl; justify-content: center; flex-wrap: wrap; margin: 2px 0 12px; }
+.row-step { min-width: 54px; height: 53px; padding: 2px 10px; display: grid; place-items: center; border-radius: 15px; border: 2px solid #b8d9df; background: #eef7f7; color: #7498a1; font-size: 25px; font-weight: 900; }
+.row-step.done { color: var(--navy); background: #fff0bb; border-color: #eec760; }.row-step.current { background: #e6faff; border-color: #1594bf; color: var(--navy); }
+.homework-panel .instruction { margin-bottom: 5px; }
+.homework-panel .hear-button { margin-bottom: 14px; }
+.homework-panel .feedback { margin-bottom: 8px; }
+.mark-lesson { display: flex; gap: 14px; flex-wrap: wrap; justify-content: center; margin: 7px 0 20px; }
+.mark-card { min-width: 135px; padding: 9px 14px 13px; border: 3px solid #a7d8e5; border-radius: 19px; background: #e6faff; }
+.mark-card strong { display: block; font-size: 71px; line-height: 1.2; color: var(--navy); }
+.mark-card span { display: block; font-size: 17px; font-weight: 900; }
+.row-complete-word { font-size: clamp(29px, 6vw, 45px); font-weight: 900; color: var(--navy); margin: 3px 0 19px; line-height: 1.6; }
+.homework-panel .next-button { margin-top: 9px; }
+.homework-panel .tiny-note { max-width: 540px; }
+@media (max-width: 460px) {
+  .game-shell .scene { min-height: 190px; }
+  .homework-panel { padding: 16px 12px 22px; }
+  .homework-panel .eyebrow { font-size: 12px; margin-bottom: 5px; }
+  .homework-panel h2 { font-size: 27px; margin-bottom: 5px; }
+  .homework-panel .sheet-progress { margin: 0 0 9px; }
+  .sheet-progress-label { font-size: 12px; margin-bottom: 5px; }
+  .row-step { min-width: 44px; height: 42px; font-size: 21px; }
+  .row-steps { margin: 0 0 8px; }
+  .homework-panel .instruction { font-size: 16px; margin: 0 0 4px; }
+  .homework-panel .hear-button { min-height: 52px; margin: 4px 0 9px; font-size: 19px; }
+  .homework-panel .choices { gap: 8px; margin-top: 2px; margin-bottom: 9px; }
+  .homework-panel .letter-card { width: 43%; min-height: 99px; font-size: 57px; padding-bottom: 12px; }
+  .homework-panel .choices.four .letter-card { width: 43%; }
+  .mark-card { min-width: 125px; }
+  .level-choices { gap: 6px; }
+  .level-card { min-height: 90px; padding: 6px 3px; }
+  .level-card strong { font-size: 18px; }
+  .level-card span { font-size: 12px; }
+}
